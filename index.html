@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        table,th,td{
+            border : 1px solid black;
+        }
+        th{
+            text-align: center;
+            ;
+        }
+        form {
+      
+      padding: 5px;
+      width: 50%;
+      }
+      label{
+        margin-right: 5%;
+      }
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      width: 50%;
+      padding: 5px;
+
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas 1</title>
 </head>
 <body>
+    <h1>Challenge_22.11.4675</h1>
+    <table style="width: 75% ;">
+        <tr>
+            <th colspan="4" style="background-color: pink; ">Daftar Buku</th>
+        </tr>
+        <tr>
+            <td rowspan="4"><img src="Komik-Sousou-no-Frieren-203x319.jpg" alt="Frieren" width="210" height="320"></td>
+            <td>Judul</td>
+            <td>:</td>
+            <td>Manga Sousou no Frieren</td>
+        </tr>
+        <tr>
+            <td>Pengarang</td>
+            <td>:</td>
+            <td>Yamada Kanehito</td>
+        </tr>
+        <tr>
+            <td>Harga</td>
+            <td>:</td>
+            <td>Rp. 120.000,00</td>
+        </tr>
+    </table>
+    <h2>Isilha formulih dibawah ini</h2>
+    <form>
+        <label for="nama">Nama: </label>
+        <input type="text" id="nama" name="nama" placeholder="Your Name"><br>
     
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="Your Password"><br>
+    
+        <label>Jenis Kelamin: </label>
+        <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki">
+        <label for="laki-laki">Laki-Laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+        <label for="perempuan">Perempuan</label><br>
+    
+        <label>Hobi: </label>
+        <input type="checkbox" id="membaca_buku" name="hobi[]" value="membaca_buku">
+        <label for="membaca_buku">Membaca Buku</label>
+        <input type="checkbox" id="menulis" name="hobi[]" value="menulis">
+        <label for="menulis">Menulis</label>
+        <input type="checkbox" id="memancing" name="hobi[]" value="memancing">
+        <label for="memancing">Memancing</label><br>
+    
+        <label for="kota">Asal Kota: </label>
+        <input type="text" id="kota" name="kota" placeholder="Your City"><br>
+    
+        <label for="komentar">Komentar Anda: </label>
+        <textarea id="komentar" name="komentar" rows="4" cols="50" placeholder="Write your comment here"></textarea><br>
+    
+        <input type="submit" value="Mulai Proses!">
+      </form>
 </body>
 </html>
